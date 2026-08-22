@@ -24,9 +24,6 @@
 <p align="center">
   <a href="https://harperwork.cn/"><img src="docs/preview.jpg" alt="Harper 3D 作品集首屏" width="800"></a>
 </p>
-
-<p align="center"><b>点击预览图访问 Harper 的 3D 作品集 →</b></p>
-
 ## 技术栈
 
 - **前端框架**: React 18 + TypeScript 5
