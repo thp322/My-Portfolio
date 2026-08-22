@@ -21,10 +21,6 @@
   <a href="#工作原理">工作原理</a> |
   <a href="#技术特性">技术特性</a>
 </p>
-
-
-## 在线访问
-
 <p align="center">
   <a href="https://harperwork.cn/"><img src="docs/preview.jpg" alt="Harper 3D 作品集首屏" width="800"></a>
 </p>
