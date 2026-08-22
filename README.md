@@ -24,6 +24,8 @@
 <p align="center">
   <a href="https://harperwork.cn/"><img src="docs/preview.jpg" alt="Harper 3D 作品集首屏" width="800"></a>
 </p>
+基于 React Three Fiber + TypeScript 的滚动式个人 3D 简历。
+
 ## 技术栈
 
 - **前端框架**: React 18 + TypeScript 5
