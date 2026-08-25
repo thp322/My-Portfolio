@@ -97,7 +97,7 @@ npm run lint       # ESLint
 | 单个作品的详情正文                        | `src/content/works/<slug>.md`（frontmatter + markdown；格式见 `src/data/workDocs.ts`，示例见 `src/content/works/example.md`） |
 | 履历条数 / 相机停靠点                     | `src/data/focusPoints.ts` 的 `FOCUS_POINTS`（要与 `Resume.tsx` 的 entries 同步增删） |
 | 灯光 / 景深 / Bloom / 背景渐变 / 人物位置 | `src/scene/Scene.tsx` 里各组件顶部的**普通常量**，直接改值，没有面板也没有额外配置文件 |
-| 人物模型                                  | `public/models/me.glb`，见 [换人物模型](https://github.com/dayinji/sen-3d-resume#换人物模型) |
+| 人物模型                                  | `public/models/me.glb`                                       |
 
 作品详情用极简 markdown：每个作品一个 `.md`，通过 `works.ts` 里 item 的 `slug` 关联；没有对应 `.md` 的作品走统一占位详情。
 
