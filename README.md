@@ -6,7 +6,6 @@
   <img src="https://img.shields.io/badge/three.js-r169-000000?style=flat&logo=three.js&logoColor=white" alt="three.js r169">
   <img src="https://img.shields.io/badge/Vite-5-646CFF?style=flat&logo=vite&logoColor=white" alt="Vite 5">
 </p>
-
 <p align="center">
   <a href="https://github.com/thp322"><img src="https://img.shields.io/badge/GitHub-thp322-181717?logo=github" alt="GitHub"></a>
   <a href="https://harperwork.cn"><img src="https://img.shields.io/badge/Portfolio-harperwork.cn-00adb5?logo=google-chrome" alt="Portfolio"></a>
@@ -22,8 +21,9 @@
   <a href="#技术特性">技术特性</a>
 </p>
 <p align="center">
-  <a href="https://harperwork.cn/"><img src="docs/preview.jpg" alt="Harper 3D 作品集首屏" width="800"></a>
+  <a href="https://harperwork.cn/"><img src="docs/preview.png" alt="Harper 3D 作品集首屏" width="800"></a>
 </p>
+
 基于 React Three Fiber + TypeScript 的滚动式个人 3D 简历。
 
 ## 技术栈
