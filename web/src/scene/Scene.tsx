@@ -6,7 +6,7 @@ import * as THREE from 'three'
 import Env from './Env'
 import { FOCUS_POINTS, FRAMES_PER_NODE } from '../data/focusPoints'
 
-useGLTF.preload(`${import.meta.env.BASE_URL}models/me.glb`)
+useGLTF.preload(`${import.meta.env.BASE_URL}models/harper.glb`)
 
 // 聚焦锚点（glb 内 focus-* 空对象），顺序对应履历节点；名单是唯一真源，见 data/focusPoints.ts
 const POINTS = FOCUS_POINTS as readonly string[]
@@ -68,14 +68,14 @@ function GradientBackground() {
 // 所有光源（HDRI 环境 + 半球 + 主/补方向光）
 function Lights() {
   const c = {
-    envIntensity: 0.85,
-    hemiIntensity: 1.15,
+    envIntensity: 0.4, // 原值 0.85，降低环境光强度减少贴纸反光
+    hemiIntensity: 0.6, // 原值 1.15，降低半球光强度
     hemiSky: '#ffffff',
     hemiGround: '#404040',
-    keyIntensity: 2.35,
+    keyIntensity: 1.2, // 原值 2.35，降低主光强度减少强光影响
     keyColor: '#ffd9c6',
     keyPos: [5, 8, 5] as [number, number, number],
-    fillIntensity: 2.25,
+    fillIntensity: 1.1, // 原值 2.25，降低补光强度
     fillColor: '#9fc6ff',
     fillPos: [-5, 4, -4] as [number, number, number],
   }
@@ -146,7 +146,7 @@ function Man2({
   }
 
   const get = useThree((s) => s.get)
-  const { scene, animations } = useGLTF(`${import.meta.env.BASE_URL}models/me.glb`)
+  const { scene, animations } = useGLTF(`${import.meta.env.BASE_URL}models/harper.glb`)
 
   // 克隆模型；收集眼睛对象、聚焦锚点对象、glb 自带相机、各锚点景深开关
   const { model, eyes, points, startPoint, glbCam, focusNode, dof } = useMemo(() => {
@@ -516,9 +516,9 @@ function Post2({
   dofRangeRef: MutableRefObject<number>
 }) {
   const post = {
-    bloomIntensity: 0.6,
+    bloomIntensity: 0.6, 
     bloomThreshold: 0.82,
-    dof: true,
+    dof: false, // true：景深效果，false：禁用车深效果使贴纸保持清晰
     startBokeh: 7.4,
     startRange: 2.0,
     focusBokeh: 11.0,
@@ -551,7 +551,8 @@ function Post2({
 
   return (
     <EffectComposer multisampling={0} stencilBuffer={false} depthBuffer>
-      {(post.dof ? (
+      {/* 景深效果已禁用：使贴纸保持清晰，不再随镜头移动从模糊变清晰 */}
+      {/* {(post.dof ? (
         <DepthOfField
           ref={dofRef}
           target={[0, 1.3, 0]}
@@ -559,7 +560,7 @@ function Post2({
           bokehScale={post.focusBokeh}
           height={480}
         />
-      ) : null) as any}
+      ) : null) as any} */}
       <Bloom
         mipmapBlur
         intensity={post.bloomIntensity}
