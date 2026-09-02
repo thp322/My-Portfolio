@@ -1528,3 +1528,33 @@ canvas {
     font-size: 11.5px;
   }
 }
+
+/* ---------- 页脚：版权 + 备案号 ---------- */
+.site-footer {
+  position: relative;
+  z-index: 10;
+  padding: 40px 24px 32px;
+  text-align: center;
+  border-top: 1px solid var(--line);
+  background: rgba(10, 14, 22, 0.85);
+  backdrop-filter: blur(10px);
+}
+
+.site-footer p {
+  font-size: 12px;
+  letter-spacing: 0.06em;
+  color: var(--muted);
+  margin-bottom: 8px;
+}
+
+.site-footer a {
+  font-size: 12px;
+  letter-spacing: 0.08em;
+  color: var(--muted);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.site-footer a:hover {
+  color: var(--ink);
+}

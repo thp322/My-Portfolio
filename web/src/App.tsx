@@ -187,6 +187,11 @@ export default function App() {
         <Resume lang={lang} />
         <Works lang={lang} innerRef={worksRef} />
       </main>
+
+      <footer className="site-footer">
+        <p>© 2026 · Harper’s Portfolio</p>
+        <a href="https://beian.miit.gov.cn/" target="_blank" rel="noopener noreferrer">湘ICP备2025140854号-3</a>
+      </footer>
     </>
   )
 }
