@@ -27,6 +27,11 @@ const BLOG_LINKS = [
     label: 'csdn',
     href: 'https://blog.csdn.net/thp2656245936?spm=1000.2115.3001.5343',
   },
+  {
+    id: 'github',
+    label: 'GitHub',
+    href: 'https://github.com/thp322',
+  },
 ]
 
 // 履历数据（双语）。英文为译稿，可按需润色。
