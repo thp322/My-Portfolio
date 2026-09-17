@@ -70,9 +70,9 @@ export const WORKS: Record<'zh' | 'en', WorksLang> = {
         title: 'Agent 项目',
         tagline: 'LangChina · LangGraph',
         items: [
-          { name: '01 DataClaw产品文档智能维护Agent', 
-            meta: 'LangChain + LangGraph + FastAPI + ChromaDB', 
-            slug: 'dataclaw-agent' },
+          { name: '01 DocClaw 产品文档智能维护 Agent', 
+            meta: 'LangChain + LangGraph + FastAPI + ChromaDB + Streamlit', 
+            slug: 'docclaw-agent' },
           { name: '02 基于LLM的智能SVG图像生成Agent应用', 
             meta: 'PyTorch + Transformers + OpenCV + KaggleHub', 
             slug: 'svg-agent-app' },
@@ -92,12 +92,12 @@ export const WORKS: Record<'zh' | 'en', WorksLang> = {
             name: '01 病毒性肝炎疾病数据可视化分析',
             meta: 'Django + MySQL + ECharts + chart.js',
             // tags: ['111'],
-            slug: 'visualize-data',
+            slug: 'hepatitis-viz',
           },
           {
             name: '02 本草脉络——中医药大数据可视化之旅',
             meta: 'Django + MySQL + Neo4j + D3.js',
-            slug: 'visualize-data',
+            slug: 'tcm-viz',
           },
          { name: '03 ', meta: ' ', slug: '' },
          { name: '04 ', meta: ' ', slug: '' },
@@ -153,9 +153,9 @@ export const WORKS: Record<'zh' | 'en', WorksLang> = {
         tagline: 'LangChain · LangGraph',
         items: [
           {
-            name: '01 DataClaw Product Document Intelligent Maintenance Agent',
+            name: '01 DocClaw Product Document Intelligent Maintenance Agent',
             meta: 'LangChain + LangGraph + FastAPI + ChromaDB',
-            slug: 'dataclaw-agent',
+            slug: 'docclaw-agent',
           },
           {
             name: '02 LLM-based Intelligent SVG Image Generation Agent',
@@ -176,12 +176,12 @@ export const WORKS: Record<'zh' | 'en', WorksLang> = {
           {
             name: '01 Viral Hepatitis Disease Data Visualization Analysis',
             meta: 'Django + MySQL + ECharts + Chart.js',
-            slug: 'visualize-data',
+            slug: 'hepatitis-viz',
           },
           {
             name: '02 Tracing Herbal Origins — A Journey into TCM Big Data Visualization',
             meta: 'Django + MySQL + Neo4j + D3.js',
-            slug: 'visualize-data',
+            slug: 'tcm-viz',
           },
           { name: '03 ', meta: ' ', slug: '' },
           { name: '04 ', meta: ' ', slug: '' },
