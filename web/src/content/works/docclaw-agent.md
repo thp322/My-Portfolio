@@ -14,13 +14,23 @@ link: https://docclaw.harperwork.cn/
 
 围绕产品文档的完整生命周期，DocClaw 提供六大核心能力：需求拆解 · 竞品调研 · PRD 生成 · 影响评估 · 记忆沉淀 · 文档管理
 
-项目已部署，可在页面底部访问作品
+项目已部署，可在页面底部在线访问作品：[DocClaw](https://docclaw.harperwork.cn/)
+
+GitHub 地址：[DocClaw](https://github.com/thp322/DocClaw)
 
 ## 快速预览
 
 ![home](/works/docclaw/home.png)
 
 ![work](/works/docclaw/work.png)
+
+## 技术栈
+
+- LangChain
+- LangGraph
+- fastAPI
+- Streamlit
+- Chroma
 
 ## 功能特性
 
@@ -31,12 +41,9 @@ link: https://docclaw.harperwork.cn/
 - **产品记忆沉淀**：决策、调研、技术选型自动入库，借助向量检索下次直接复用
 - **多源文档管理**：本地 + Wiki + 对象存储，一处保存、处处同步
 
-## 技术栈
 
-（更新中）
 
 
 
 ---
-
 
